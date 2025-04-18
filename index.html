@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR MovieReview</title>
+    <link rel="icon" type="image/x-icon" href="Movie review .jpg">
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <header>
+        <div class="div1"> 
+            <div>
+               <img src="Movie review .jpg" alt="logo" height="50px" width="50px">
+               <p style="font-size:xx-small"><code style="color: red;">M</code>ovie <code style="color: red;">R</code>eview</p>
+            </div>
+            <a href="movies.html" class="ba" ><button style="color: white;">Movies</button></a>
+            <a href="webseries.html" class="ba"><button style="color: white;">Webseries</button></a> 
+        </div>
+        <div>
+            
+        </div>
+            
+        <div class="div2">
+            <input type="text" placeholder="search for your fav movies on 2025..." id="title" onkeyup="livesearch()">
+       </div>
+    </header>
+
+    <div class="photo">
+        <button class="prev">&#10094;</button>
+        <div id="background" class="background">
+            <h1 id="slideText" class="animated-text"></h1>
+            <p id="slideCaption" class="animated-caption"></p>
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <div class="trending">
+        <h2>Trending Movies 2025!!</h2>
+    </div>
+    
+    <div class="tmovies">
+        <div class="moviecard" data-url="Mad-Square.html">
+            <span class="card-text">MAD-Square</span>
+        </div>
+        <div class="moviecard" data-url="Court.html">
+            <span class="card-text">Court- State vs Nobodys</span>
+        </div>
+        <div class="moviecard" data-url="Robinhood.html">
+            <span class="card-text">Robinhood</span>
+        </div>
+        <div class="moviecard" data-url="Sankrantiki.html">
+            <span class="card-text">Sankrantiki Vastunnam</span>
+        </div>
+        <div class="moviecard" data-url="Thandel.html">
+            <span class="card-text">Thandel</span>
+        </div>
+        <div class="moviecard" data-url="daaku.html">
+            <span class="card-text">Dhaku maharaaj</span>
+        </div>
+        <div class="moviecard" data-url="gamechanger.html">
+            <span class="card-text">Gamechanger</span>
+        </div>
+        <div class="moviecard" data-url="laila.html">
+            <span class="card-text">Laila</span>
+        </div>
+    </div>
+    
+    <div class="upcoming">
+        <h2>Upcoming Movies</h2>
+    </div>
+    
+    <div class="tmovies">
+        <div class="moviecard2" data-url="harihara.html">
+            <span class="card-text">Hari hara veera mallu</span>
+        </div>
+        <div class="moviecard2" data-url="og.html">
+            <span class="card-text">OG-Original Gangster</span>
+        </div>
+        <div class="moviecard2" data-url="ustaad.html">
+            <span class="card-text">Ustaad Bhagat Singh</span>
+        </div>
+        <div class="moviecard2" data-url="rajasaab.html">
+            <span class="card-text">Rajasaab</span>
+        </div>
+        <div class="moviecard2" data-url="ghaati.html">
+            <span class="card-text">Ghaati</span>
+        </div>
+        <div class="moviecard2" data-url="kannappa.html">
+            <span class="card-text">Kannapa</span>
+        </div>
+        <div class="moviecard2" data-url="hit.html">
+            <span class="card-text">HIT3-The 3rd Case</span>
+        </div>
+        <div class="moviecard2" data-url="massjathara.html">
+            <span class="card-text">Mass jathara</span>
+        </div>
+        <div class="moviecard2" data-url="akhanda2.html">
+            <span class="card-text">Akhanda-2</span>
+        </div>
+        <div class="moviecard2" data-url="peddi.html">
+            <span class="card-text">Peddi</span>
+        </div>
+    </div>
+
+    <div class="trending">
+        <h2>Trending series!!</h2>
+    </div>
+    
+    <div class="tmovies">
+        <div class="seriescard" data-url="kobali.html">
+            <span class="card-text">Kobali</span>
+        </div>
+        <div class="seriescard" data-url="sivarapalli.html">
+            <span class="card-text">Sivarapalli</span>
+        </div>
+        <div class="seriescard" data-url="vikatakavi.html">
+            <span class="card-text">Vikatakavi</span>
+        </div>
+        <div class="seriescard" data-url="arthamaindaarunkumar.html">
+            <span class="card-text">Arthamainda Arun Kumar</span>
+        </div>
+        <div class="seriescard" data-url="mysteryofmokshaisland.html">
+            <span class="card-text">Mystery of Moksha Island</span>
+        </div>
+        <div class="seriescard" data-url="savethetigers.html">
+            <span class="card-text">Save the Tigers-2</span>
+        </div>
+        <div class="seriescard" data-url="missperfect.html">
+            <span class="card-text">Miss Perfect</span>
+        </div>
+        <div class="seriescard" data-url="90s.html">
+            <span class="card-text">#90's</span>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <img src="Movie review .jpg" alt="logo" height="50px" width="50px">
+            <p style="font-size:-small"><code style="color: red; font-family: Arial, Helvetica, sans-serif;">M</code>ovie <code style="color: red; font-family: Arial, Helvetica, sans-serif;">R</code>eview</p>
+         </div>
+        <p>&copy;All rights reserverd</p>
+    </footer>
+
+    <script src="mainpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+/* Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+/*======HEADER=======*/
+header {
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.div1, .div2 {  
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div button {
+    border: none;
+    height: 50px;
+    background-color: black;
+    width: 80px; 
+    cursor: pointer;
+}
+
+.ba {
+    text-decoration: none;
+    color: white;
+}
+
+header div button:hover {
+    box-shadow: 0px 0px 5px red;
+}
+
+input {
+    margin-left: 10%;
+    width: 700px;
+    padding: 5px;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+  
+input:focus {
+    border-color: red;
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+#title {
+    color: white;
+}
+
+/*=====MAIN REVIEW=====*/
+
+.mainreview {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.mainreview::before {
+    content: "";
+    inset: 0;
+    filter: brightness(0.3);
+    background-image: url('https://english.bigtvlive.com/wp-content/uploads/2025/03/Ustad.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 0;
+}
+
+.moviecard {
+    margin-top: 30px;
+    width: 25%;
+    height: 70%;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-image: url('https://www.cinejosh.com/newsimg/newsmainimg/the-makers-of-ustaad-bhagat-singh-released-a-new-poster_b_0209230632.jpg');
+    z-index: 1;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 30px;
+    height: 100%;
+    width: 70%;
+    background-color: transparent;
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 30px;
+}
+
+.cap {
+    font-size: x-small;
+}
+
+.sidereview {
+    height: 500px;
+    width: 100%;
+}
+
+pre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trailer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.large {
+    font-size: large;
+}
+
+.rate {
+    display: flex;
+    gap: 10%;
+    margin-top: 10%;
+}
+
+/*====== ZOOM LIGHTBOX ======*/
+.zoom-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.zoom-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 30px #000;
+    transition: transform 0.3s;
+}
+
+.zoom-overlay.show {
+    display: flex;
+}
+
+/*=====Side content=====*/
+
+.sidereview {
+    margin-top: 2%;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.heading {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    margin-right: 1%;
+    margin-left: 2%;
+    height: 40%;
+    width: 5px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.high {
+    font-size: x-large;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    gap: 5%; 
+}
+
+.cast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 125px;
+    width: 298px;
+    overflow: hidden;
+    box-shadow: 0 0 10px red;
+    margin: 2%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.cast:hover {
+    box-shadow: 0 0 15px 4px red;
+    transform: scale(1.05);
+}
+
+.cast img {
+    height: 100%;
+    width: 40%;
+}
+
+.name {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 10%; 
+    justify-content: center;
+}
+
+.outcast {
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 10%;
+}
+
+.ocname {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    gap: 1%;
+}
+
+.ocname p, .techname p {
+    color: red;
+    font-size: medium;
+    padding: 1%;
+}
+
+.storyline {
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.storyline h2, p .ocname h2, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.techname {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    gap: 1%;
+    margin-left: 2%;    
+}
+
+/*====FOOTER====*/
+
+footer {
+    background-image: url('footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+}
